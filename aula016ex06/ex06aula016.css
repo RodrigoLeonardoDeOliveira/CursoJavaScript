@@ -1,0 +1,29 @@
+body {
+    background: black;
+}
+
+header {
+    font: normal 15pt arial;
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+select#selnum {
+    width: 150px;
+
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font: normal 15pt arial;
+    padding: 10px;
+}

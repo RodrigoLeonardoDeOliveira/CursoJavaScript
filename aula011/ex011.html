@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringo</title>
+</head>
+<body>
+    <h1>Você é de qual país?</h1>
+    <input type="text" name="where" id="where">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="result">Sou?</div>
+   
+
+    <script>
+      
+        function clicar() {
+            var pais = window.document.getElementById('where')
+            var res = window.document.getElementById('result')
+           
+            if (pais == "brasil") {
+                res.innerHTML = `Você é brasileiro`
+            } else {
+                res.innerHTML = `Você é estrangeiro`
+            }
+        }
+            
+    
+
+    </script>
+    
+</body>
+</html>

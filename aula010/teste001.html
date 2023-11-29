@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Java Script</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            color: white;
+            font: normal 10pt Arial;
+            background: blue;
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="oi">
+        Olá!
+    </div>
+
+    <script>
+        var hi = window.document.getElementById('oi')
+        
+        hi.addEventListener('click', clicar)
+        hi.addEventListener('mouseenter', entrar)
+        hi.addEventListener('mouseout', sair)
+
+        function clicar () {
+            hi.innerText = 'Tudo bem?'            
+            hi.style.background = 'violet'
+
+        }
+
+        function entrar () {
+            hi.innerText = 'Clique para ver a mensagem!'            
+            hi.style.background = 'red'
+
+        }
+
+        function sair () {
+            hi.innerText = 'Olá!'            
+            hi.style.background = 'green'
+
+        }
+
+    </script>
+</body>
+</html>
